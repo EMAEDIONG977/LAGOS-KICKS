@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kicks Lagos | Sneakers for the streets</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+
+            <a href="index.html" class="logo">
+                KICKS<span>LAGOS</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html#shop">Shop</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+
+            <a href="cart.html" class="icon-btn" aria-label="Cart">
+                🛒
+                <span class="badge cart-count hidden">0</span>
+            </a>
+
+            <button
+                class="icon-btn"
+                id="themeBtn"
+                aria-label="Toggle dark mode"
+            >
+                🌙
+            </button>
+
+            <button
+                class="icon-btn"
+                id="hamburger"
+                aria-label="Menu"
+            >
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+
+            <h1>Step out. Stand out.</h1>
+
+            <p>
+                Fresh sneakers for Lagos and beyond.
+                Pick your pair, order on WhatsApp,
+                and we deliver to your door.
+            </p>
+
+            <a href="#shop" class="btn" id="shopNow">
+                Shop Now
+            </a>
+
+        </div>
+    </section>
+
+
+    <main class="container" id="shop">
+
+        <div class="toolbar">
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Search sneakers or brands"
+                aria-label="Search"
+            >
+
+            <div class="filters" id="filters">
+
+                <button class="chip active" data-cat="all">
+                    All
+                </button>
+
+                <button class="chip" data-cat="running">
+                    Running
+                </button>
+
+                <button class="chip" data-cat="casual">
+                    Casual
+                </button>
+
+                <button class="chip" data-cat="basketball">
+                    Basketball
+                </button>
+
+            </div>
+
+            <select id="sort" aria-label="Sort">
+
+                <option value="featured">
+                    Sort: Featured
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name: A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="grid" id="grid"></div>
+
+
+        <div class="empty hidden" id="noResults">
+
+            <h3>No products found</h3>
+
+            <p>
+                Try a different search or category.
+            </p>
+
+            <button class="btn" id="resetBtn">
+                Clear filters
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="socials">
+
+                <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="https://tiktok.com"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    TikTok
+                </a>
+
+                <a
+                    href="https://x.com"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    X
+                </a>
+
+                <a
+                    href="https://wa.me/2348000000000"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+            <p>
+                &copy; 2026 Kicks Lagos. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <div class="overlay" id="overlay">
+
+        <div
+            class="modal"
+            id="modalBox"
+            role="dialog"
+            aria-modal="true"
+        ></div>
+
+    </div>
+
+
+    <div id="toast" role="status"></div>
+
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+const products = [
+  { id: 1, name: "Velocity Runner", brand: "Stride", price: 45000, category: "running", sizes: [40, 41, 42, 43, 44], image: "VR", description: "Lightweight mesh runner with a springy foam sole. Built for early-morning Lekki laps and weekend 5Ks.", inStock: true },
+  { id: 2, name: "Lekki Cruiser", brand: "Urban Sole", price: 38000, category: "casual", sizes: [40, 41, 42, 43, 44], image: "LC", description: "Clean everyday low-top with a cushioned insole. Goes with jeans, shorts, and everything in between.", inStock: true },
+  { id: 3, name: "Court King High", brand: "Court Kings", price: 62000, category: "basketball", sizes: [40, 41, 42, 43, 44], image: "CK", description: "High-top with ankle support and a grippy outsole for indoor and outdoor courts.", inStock: true },
+  { id: 4, name: "Marina Glide", brand: "Stride", price: 52000, category: "running", sizes: [40, 41, 42, 43, 44], image: "MG", description: "Smooth-riding trainer with a breathable knit upper. Comfortable for long distances.", inStock: true },
+  { id: 5, name: "Yaba Street Low", brand: "Urban Sole", price: 29500, category: "casual", sizes: [40, 41, 42, 43, 44], image: "YS", description: "Skate-inspired low-top with a durable canvas upper. Made for daily wear around campus.", inStock: true },
+  { id: 6, name: "Slam Dunk Pro", brand: "Court Kings", price: 75000, category: "basketball", sizes: [40, 41, 42, 43, 44], image: "SD", description: "Our top basketball shoe with responsive cushioning and a locked-in fit.", inStock: false },
+  { id: 7, name: "Ikoyi Classic", brand: "Nova", price: 41000, category: "casual", sizes: [40, 41, 42, 43, 44], image: "IC", description: "Leather-look sneaker with a minimal profile. Easy to dress up or down.", inStock: true },
+  { id: 8, name: "Sprint Elite", brand: "Nova", price: 58000, category: "running", sizes: [40, 41, 42, 43, 44], image: "SE", description: "Fast, light, and responsive. A race-day shoe with a carbon-look plate.", inStock: true },
+  { id: 9, name: "Surulere Flex", brand: "Urban Sole", price: 34000, category: "casual", sizes: [40, 41, 42, 43, 44], image: "SF", description: "Flexible slip-resistant sole with a soft lining. Easy comfort from morning to night.", inStock: false },
+  { id: 10, name: "Baller X", brand: "Court Kings", price: 68000, category: "basketball", sizes: [40, 41, 42, 43, 44], image: "BX", description: "Mid-top court shoe with bold colour blocking and strong heel support.", inStock: true },
+  { id: 11, name: "Marathon Lite", brand: "Stride", price: 47500, category: "running", sizes: [40, 41, 42, 43, 44], image: "ML", description: "Featherweight daily trainer with extra heel cushioning for longer runs.", inStock: true },
+  { id: 12, name: "Island Slip", brand: "Nova", price: 26000, category: "casual", sizes: [40, 41, 42, 43, 44], image: "IS", description: "Laceless slip-on for quick errands and hot days. Soft footbed, zero fuss.", inStock: true }
+];

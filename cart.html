@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Your Cart | Kicks Lagos</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="index.html" class="logo">
+                KICKS<span>LAGOS</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html#shop">
+                    Shop
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </nav>
+
+            <a
+                href="cart.html"
+                class="icon-btn"
+                aria-label="Cart"
+            >
+                🛒
+                <span class="badge cart-count hidden">
+                    0
+                </span>
+            </a>
+
+            <button
+                class="icon-btn"
+                id="themeBtn"
+                aria-label="Toggle dark mode"
+            >
+                🌙
+            </button>
+
+            <button
+                class="icon-btn"
+                id="hamburger"
+                aria-label="Menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <h1 class="page-title">
+            Your cart
+        </h1>
+
+
+        <div
+            class="empty hidden"
+            id="emptyCart"
+        >
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Find a pair you love and it will show up here.
+            </p>
+
+            <a
+                class="btn"
+                href="index.html"
+            >
+                Back to shop
+            </a>
+
+        </div>
+
+
+        <div
+            class="cart-layout"
+            id="cartContent"
+        >
+
+            <div id="cartItems"></div>
+
+
+            <div class="panel">
+
+                <div class="total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="cartTotal">
+                        ₦0
+                    </span>
+
+                </div>
+
+
+                <form
+                    id="checkoutForm"
+                    novalidate
+                >
+
+                    <h3>
+                        Delivery details
+                    </h3>
+
+
+                    <label
+                        class="field-label"
+                        for="name"
+                    >
+                        Full name
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                    >
+
+                    <div
+                        class="err"
+                        id="nameErr"
+                    ></div>
+
+
+                    <label
+                        class="field-label"
+                        for="phone"
+                    >
+                        Phone number
+                    </label>
+
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        inputmode="numeric"
+                        placeholder="08012345678"
+                        autocomplete="tel"
+                    >
+
+                    <div
+                        class="err"
+                        id="phoneErr"
+                    ></div>
+
+
+                    <label
+                        class="field-label"
+                        for="address"
+                    >
+                        Delivery address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="3"
+                    ></textarea>
+
+                    <div
+                        class="err"
+                        id="addressErr"
+                    ></div>
+
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="summary hidden"
+            id="orderSummary"
+        ></div>
+
+    </main>
+
+
+    <div
+        id="toast"
+        role="status"
+    ></div>
+
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
+```
